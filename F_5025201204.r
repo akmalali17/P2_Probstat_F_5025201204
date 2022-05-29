@@ -72,7 +72,7 @@ library(ggplot2)
 library(multcompView)
 library(dplyr)
 
-GTL <- read_csv("C:/Users/rendi/Downloads/GTL.csv")
+GTL <- read_csv("C:/Users/aakmalalii/Downloads/GTL.csv")
 head(GTL)
 
 str(GTL)
