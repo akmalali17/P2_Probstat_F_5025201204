@@ -49,47 +49,16 @@ tsum.test(mean.x=3.64, s.x = 1.67, n.x = 19,
           alternative = "greater", var.equal = TRUE)
 
 # soal 3c
-# Lakukan Uji Statistik (df =2)
-install.packages("mosaic")
-library(mosaic)
-
-plotDist(dist='t', df=2, col="green")
-
 # soal 3d
-qchisq(p = 0.05, df = 2, lower.tail=FALSE)
-
 # soal 3e
-# Jawaban di README
-
 # soal 3f
-# Jawaban di README
 
 # Soal 4
 # Soal 4a
-
-myData  <- read.table(url("https://rstatisticsandresearch.weebly.com/uploads/1/0/2/6/1026585/onewayanova.txt")) 
-dim(myData)
-head(myData)
-attach(myData)
-
-myData$V1 <- as.factor(myData$V1)
-myData$V1 = factor(myData$V1,labels = c("Kucing Oren","Kucing Hitam","Kucing Putih","Kucing Oren"))
-
-class(myData$V1)
-
-group1 <- subset(myData, V1=="Kucing Oren")
-group2 <- subset(myData, V1=="Kucing Hitam")
-group3 <- subset(myData, V1=="Kucing Putih")
-
 # Soal 4b
-
-
 # Soal 4c
-)
-
 # Soal 4d
 # Soal 4e
-
 # Soal 4f
 
 
