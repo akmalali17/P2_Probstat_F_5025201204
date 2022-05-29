@@ -3,14 +3,16 @@
 # Carilah Standar Deviasi dari data selisih pasangan pengamatan tabel diatas
 
 # Data sebelum dan sesudah aktivitas
-before <- c(78, 75, 67, 77, 70, 72, 28, 74, 77)
-after <- c(100, 95, 70, 90, 90, 90, 89, 90, 100)
-
+orang.ke = c(seq(1:9))
+ oksigen.sebelum = c(78, 75, 67, 77, 70, 72, 78, 74, 77)
+ oksigen.sesudah = c(100, 95, 70, 90, 90, 90, 89, 90, 100)
+ data = data.frame(orang.ke,oksigen.sebelum, oksigen.sesudah)
+ n = 9
 # Standar Devisiasi sebelum dan sesudah aktivitas
-sd_sebelum <- sd(before)
-sd_sesudah <- sd(after)
-sd_sebelum
-sd_sesudah
+selisih = data$oksigen.sesudah - data$oksigen.sebelum
+ cat("Standar deviasi selisih pasangan pengamatan : ")
+ standardev = sd(selisih)
+ standardev
 
 # 1b
 # carilah nilai t (p-value)
